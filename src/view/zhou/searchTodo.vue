@@ -8,7 +8,7 @@
 <script>
 import { getTodoList } from '@/api/data'
 
-export default { 
+export default {
   data () {
     return {
       columns: [
@@ -46,7 +46,7 @@ export default {
       this.getData()
     }
   },
-  mounted: function (){
+  mounted: function () {
     this.init()
   }
 }

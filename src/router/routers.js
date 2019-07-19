@@ -489,56 +489,6 @@ export default [
     component: () => import('@/view/error-page/404.vue')
   },
   {
-    path: '/todothings',
-    name: 'todothings',
-    meta: {
-      icon: 'logo-buffer',
-      title: '组件'
-    },
-    component: Main,
-    children: [
-      {
-        path: 'todolist',
-        name: 'todolist',
-        meta: {
-          icon: 'md-menu',
-          title: 'TODO列表'
-        },
-        component: () => import('@/view/zhou/todoList.vue')
-      },
-      {
-        path: 'createtodo',
-        name: 'createtodo',
-        meta: {
-          icon: 'md-menu',
-          title: '创建TODO',
-          // hideInMenu: true
-        },
-        component: () => import('@/view/zhou/createTodo.vue')
-      },
-      {
-        path: 'edittodo',
-        name: 'edittodo',
-        meta: {
-          icon: 'md-menu',
-          title: '编辑TODO',
-          hideInMenu: true
-        },
-        component: () => import('@/view/zhou/editTodo.vue')
-      },
-      {
-        path: 'searchTodo',
-        name: 'searchTodo',
-        meta: {
-          icon: 'md-funnel',
-          title: '搜索TODO',
-          hideInMenu: true
-        },
-        component: () => import('@/view/zhou/searchTodo.vue')
-      }
-    ]
-  },
-  {
     path: '/search',
     name: 'search',
     meta: {
@@ -556,5 +506,5 @@ export default [
         component: () => import('@/view/zhou/searchTodo.vue')
       }
     ]
-  },
+  }
 ]
