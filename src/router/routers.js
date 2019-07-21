@@ -489,21 +489,32 @@ export default [
     component: () => import('@/view/error-page/404.vue')
   },
   {
-    path: '/search',
-    name: 'search',
+    path: '/todo',
+    name: 'todo',
     meta: {
-      hideInBread: true
+      hideInBread: true,
+      icon: 'md-planet',
+      title: 'todo'
     },
     component: Main,
     children: [
       {
-        path: 'searchTodo',
-        name: 'searchTodo',
+        path: 'todolist',
+        name: 'todolist',
         meta: {
           icon: 'md-planet',
-          title: 'searchTodo'
+          title: 'todo列表'
         },
-        component: () => import('@/view/zhou/searchTodo.vue')
+        component: () => import('@/view/zhou/index.vue')
+      },
+      {
+        path: 'createlist',
+        name: 'createlist',
+        meta: {
+          icon: 'md-planet',
+          title: '创建todo'
+        },
+        component: () => import('@/view/zhou/create_todo.vue')
       }
     ]
   }

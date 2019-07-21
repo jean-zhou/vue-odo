@@ -56,3 +56,18 @@ export const getTodoList = () => {
     method: 'get'
   })
 }
+
+export const deleteTodo = (id) => {
+  return axios.request({
+    url: '/api/todo/delete/' + id + '/',
+    method: 'get'
+  })
+}
+
+export const saveTodo = info => {
+  return axios.request({
+    url: '/api/todo/add',
+    data: info,
+    method: 'post'
+  })
+}
